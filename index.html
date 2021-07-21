@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tidelab Assisgnment</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width= device-width" initial-scale ="1">
+</head>
+<style >
+	*{
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+	}
+	.headcontent{
+		/*width: 100%;*/
+		background: url(clean.png)  center  no-repeat;
+		background-size: cover;
+    	position: relative;
+		padding: 20px;
+		overflow: hidden;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+
+	}
+	.advetdiv{
+		width: 40%;
+		margin-left: 20px;
+		text-align: center;
+		color: white;
+
+
+	
+
+	}
+	.formdiv{
+		width: 40%;
+		margin-right: 20px;
+		background-color: rgba(88, 66, 69, 0.7);
+		box-shadow: 0px 4px 8px 0px rgba(0,0,0,.4);
+		color: white;
+		padding: 8px;
+		text-align: center;
+	}
+	.formdiv h3{
+		font-size: 30px;
+		line-height: 1;
+		margin-bottom: 5px;
+	}
+	.formdiv p{
+		font-size: 20px;
+		 line-height: 2;
+	}
+	 h1{
+		margin-bottom: 5px;
+		line-height: 1;
+		font-size:56px;
+	}
+	
+	input{
+		width: 80%;
+		height: 40px;
+		padding: 10px;
+		margin: 8px 8px;
+	}
+	input[type="submit"]{
+		background-color: #6bf375;
+		color: white;
+	}
+	.aboutUs{
+		position: relative;
+		padding: 20px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		text-align: center;
+	}
+	.aboutUs img{
+		border: 2px solid #ff5722b5;
+		border-radius: 50%;
+		padding: 5px;
+		color: #6bf375;
+	}
+	.aboutClient{
+		position: relative;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		text-align: center;
+		padding: 10px;
+	}
+	.aboutClient img{
+		border: 2px solid white;
+		border-radius: 50%;
+	}
+	.footer{
+		background-color: black;
+		padding: 10px;
+		color: white;
+		padding-left: 30px;
+	}
+	@media screen and (max-width: 550px){
+
+		.headcontent{
+			display: block;
+			padding: 20px;
+		}
+
+		.advetdiv{
+		width: 100%;
+		text-align: center;
+		margin: 10px auto;
+	
+	}
+	.formdiv{
+		width: 100%;
+		text-align: center;
+		}
+		.formdiv h3{
+		font-size: 20px;
+		line-height: 1;
+	}
+	.formdiv p{
+		font-size: 15px;
+		line-height: 1;
+	}
+		.aboutUs {
+		display: block;
+		padding: 20px;
+		}
+		.aboutClient{
+			display: block;
+			padding: 20px;
+		}
+		h1,h2{
+			font-size: 40px;
+			line-height: 1;
+			text-align: center;
+		}
+		
+
+	}
+</style>
+<body>
+
+	<div class="headcontent">
+		<div class="advetdiv">
+			<h1>Vancouver's Best Home Cleaners</h1>
+			<p style="font-size: 25px;">Pro Cleaning Vancouver's best cleaning services. For the quality maid service Vancouver relies on, book one of our experienced, backgroun-checked professionals to have your home clean in no time.</p>
+			
+		</div>
+		<div class="formdiv">
+			<h3 >Request Info & Booking</h3>
+			<p>Fill this form and we'll contact you as soon as we can.</p>
+			<form action="tideLab.html" method="post" onsubmit="GetRecord()">
+				<input type="text" name="fullname" placeholder="Your Name" required="" id="name"  autofocus="">
+				<input type="email" name="email" placeholder="Your Email" required="" id="email">
+				<input type="text" name="phone" placeholder="Your Phone" required="" id="phone">
+				<input type="submit" value="Request Info & Booking" required=""  id="submit" >
+			</form>
+		</div>
+	</div>
+
+	<div class="aboutUs">
+		<div>
+			<img src="m.png" width="50px" height="50px">
+			<h3>Trusted Professionals</h3>
+			<p>Our professsionals are experienced,friendly, and background checked.</p>
+		</div>
+
+		<div>
+			<img src="c.png" width="50px" height="50px">
+			<h3>Available Everyday</h3>
+			<p>We're available to serve you 7 days per,week.We'll work around your schedule.</p>
+		</div>
+
+		<div>
+			<img src="d.png" width="50px" height="50px">
+			<h3>100% Money-Back Guaranty</h3>
+			<p>If you're not satisfied, we'll refund all of,your money.It's as simple as that.</p>
+		</div>
+		
+	</div>
+
+	<div style="background-color: lightgrey ; text-align: center; padding: 30px;" ><h2>What our Client Say</h2>
+
+	<div class="aboutClient">
+
+
+		<div class="client">
+			<img src="client1.jpg" width="100px" height="100px">
+			<p>Paulo Piarra</p>
+			<p style="border-top: 1px solid darkgrey; margin-top: 5px; padding: 5px;">The team was fast and friendly. Honestly my house hasn't been this clean in a years!</p>
+		</div>
+
+		<div class="client">
+			<img src="client2.jpg" width="100px" height="100px">
+			<p>Aro Carolina</p>
+			<p style="border-top: 1px solid darkgrey; margin-top: 5px; padding: 5px;">It feels good walking into a fresh, clean apartment every day. This guys make my place spotless!</p>
+		</div>
+
+		
+	</div>
+	</div>
+
+	<div class="footer">
+		<p>&copy Copyright. All Right Reserved.</p>
+		
+	</div>
+	<script>
+		
+		function GetRecord() {
+			var name = document.getElementById('name').value;
+		var email = document.getElementById('email').value;
+		var phone = document.getElementById('phone').value;
+
+			window.alert("Your required data are:" + " " + name + " " + email + " " + phone );
+			// body...
+		}
+	</script>
+
+</body>
+</html>
